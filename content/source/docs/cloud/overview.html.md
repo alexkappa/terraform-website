@@ -137,7 +137,7 @@ Terraform Cloud embeds the Sentinel policy-as-code framework, which lets you def
 
 Policies can act as firm requirements, advisory warnings, or soft requirements that can be bypassed with explicit approval from your compliance team.
 
-- More info: [Sentinel Policies](./sentinel.index.html)
+- More info: [Sentinel Policies](./sentinel/index.html)
 
 ### Cost Estimation
 
