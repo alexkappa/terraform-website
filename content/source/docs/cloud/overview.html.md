@@ -25,7 +25,7 @@ Terraform Cloud runs [Terraform CLI][cli] to provision infrastructure.
 
 In its default state, Terraform CLI uses a local workflow, performing operations on the workstation where it is invoked and storing state in a local directory.
 
-But working with a team requires a remote workflow, since teams must share responsibilities, share awareness, and avoid single points of failure. At minimum, state must be shared; ideally, Terraform should execute in a consistent remote environment.
+Since teams must share responsibilities and awareness to avoid single points of failure, working with Terraform in a team requires a remote workflow. At minimum, state must be shared; ideally, Terraform should execute in a consistent remote environment.
 
 Terraform Cloud offers a team-oriented remote Terraform workflow, designed to be comfortable for existing Terraform users and easily learned by new users. The foundations of this workflow are remote Terraform execution, a workspace-based organizational model, version control integration, command-line integration, cross-workspace data sharing, and a private Terraform module registry.
 
@@ -53,7 +53,7 @@ Terraform Cloud organizes infrastructure with _workspaces_ instead of directorie
 
 ### Version Control Integration
 
-Infrastructure as code belongs in version control, so Terraform Cloud is designed to work directly with your version control system (VCS) provider.
+Like other kinds of code, infrastructure as code belongs in version control, so Terraform Cloud is designed to work directly with your version control system (VCS) provider.
 
 Each workspace can be linked to a VCS repository that contains its Terraform configuration, optionally specifying a branch and subdirectory. Terraform Cloud automatically retrieves configuration content from the repository, and will also watch the repository for changes:
 
@@ -144,4 +144,3 @@ Policies can act as firm requirements, advisory warnings, or soft requirements t
 Before making changes to infrastructure in the major cloud providers, Terraform Cloud can display an estimate of its total cost, as well as any change in cost caused by the proposed updates. Cost estimates can also be used in Sentinel policies to provide warnings for major price shifts.
 
 - More info: [Cost Estimation](./cost-estimation/index.html)
-
