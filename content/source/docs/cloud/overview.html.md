@@ -57,7 +57,7 @@ Like other kinds of code, infrastructure as code belongs in version control, so 
 
 Each workspace can be linked to a VCS repository that contains its Terraform configuration, optionally specifying a branch and subdirectory. Terraform Cloud automatically retrieves configuration content from the repository, and will also watch the repository for changes:
 
-- When new commits are merged, affected workspaces automatically run Terraform plans with the new code.
+- When new commits are merged, linked workspaces automatically run Terraform plans with the new code.
 - When pull requests are opened, affected workspaces run speculative plans with the proposed code changes and post the results as a pull request check; reviewers can see at a glance whether the plan was successful, and can click through to view the proposed changes in detail.
 
 VCS integration is powerful, but optional; if you use an unsupported VCS or want to preserve an existing validation and deployment pipeline, you can use the API or Terraform CLI to upload new configuration versions. You'll still get the benefits of remote execution and Terraform Cloud's other features.
