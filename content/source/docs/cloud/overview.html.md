@@ -83,7 +83,7 @@ The remote backend also supports state manipulation commands like `terraform imp
 
 Infrastructure is never completely isolated, and separate groups of infrastructure resources often need to share a small amount of information.
 
-Terraform Cloud makes it trivial to share information between workspaces with root-level [outputs][]. Any workspace that uses remote operations can use [`terraform_remote_state` data sources][remote_state] to access other workspaces' outputs, without any additional configuration or authentication.
+Terraform Cloud enables you to share information between workspaces with root-level [outputs][]. Any workspace that uses remote operations can use [`terraform_remote_state` data sources][remote_state] to access other workspaces' outputs, without any additional configuration or authentication.
 
 - More info: [Terraform State in Terraform Cloud](./workspaces/state.html)
 
