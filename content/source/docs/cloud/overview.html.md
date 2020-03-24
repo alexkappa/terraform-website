@@ -53,7 +53,7 @@ Terraform Cloud organizes infrastructure with _workspaces_ instead of directorie
 
 ### Version Control Integration
 
-Like other kinds of code, infrastructure as code belongs in version control, so Terraform Cloud is designed to work directly with your version control system (VCS) provider.
+Like other kinds of code, infrastructure-as-code belongs in version control, so Terraform Cloud is designed to work directly with your version control system (VCS) provider.
 
 Each workspace can be linked to a VCS repository that contains its Terraform configuration, optionally specifying a branch and subdirectory. Terraform Cloud automatically retrieves configuration content from the repository, and will also watch the repository for changes:
 
